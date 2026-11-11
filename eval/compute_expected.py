@@ -2,7 +2,7 @@
 
 Independent path: plain json + shapely on the committed GeoJSON. It does not import
 sgmp, geopandas or pandas, so a bug in the engine cannot leak into the answer key.
-Writes eval/expected.json.
+Writes eval/expected.json (main set) and eval/heldout_expected.json (held-out set).
 """
 import json
 from pathlib import Path
@@ -11,6 +11,8 @@ from shapely.geometry import Point, shape
 
 ROOT = Path(__file__).resolve().parents[1]
 EX = ROOT / "data" / "extract"
+SETS = {"main": ("questions.jsonl", "expected.json"),
+        "heldout": ("heldout_questions.jsonl", "heldout_expected.json")}
 
 
 def features(name):
@@ -80,15 +82,16 @@ def main():
     parcels = [(f["properties"], shape(f["geometry"])) for f in features("landuse")]
     stations = {f["properties"]["STATION"]: Point(f["geometry"]["coordinates"])
                 for f in features("mrt_stations")}
-    out = {}
-    for line in (ROOT / "eval" / "questions.jsonl").read_text(encoding="utf-8").splitlines():
-        q = json.loads(line)
-        if q.get("refuse"):
-            out[q["id"]] = {"refuse": True}
-        else:
-            out[q["id"]] = {"op": q["gold"]["op"], "answer": answer(q["gold"], parcels, stations)}
-    (ROOT / "eval" / "expected.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(out)} expected answers")
+    for src, dst in SETS.values():
+        out = {}
+        for line in (ROOT / "eval" / src).read_text(encoding="utf-8").splitlines():
+            q = json.loads(line)
+            if q.get("refuse"):
+                out[q["id"]] = {"refuse": True}
+            else:
+                out[q["id"]] = {"op": q["gold"]["op"], "answer": answer(q["gold"], parcels, stations)}
+        (ROOT / "eval" / dst).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+        print(f"{dst}: {len(out)} expected answers")
 
 
 if __name__ == "__main__":

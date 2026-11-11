@@ -1,0 +1,203 @@
+{
+ "H01": {
+  "op": "count",
+  "answer": 66
+ },
+ "H02": {
+  "op": "list",
+  "answer": [
+   662606,
+   659730,
+   621099,
+   624393,
+   652972
+  ]
+ },
+ "H03": {
+  "op": "total_area",
+  "answer": 341778.8295000009
+ },
+ "H04": {
+  "op": "breakdown",
+  "answer": {
+   "COMMERCIAL": 97063.68715000027,
+   "ROAD": 59721.24889999953,
+   "PARK": 10174.14845000001,
+   "OPEN SPACE": 221.65414999999007,
+   "HOTEL": 4188.394049999992,
+   "WHITE": 3075.4569499999816,
+   "WATERBODY": 9775.863149999963
+  }
+ },
+ "H05": {
+  "op": "breakdown",
+  "answer": {
+   "HOTEL": 83457.31774735845,
+   "ROAD": 346211.4228827477,
+   "WHITE": 27182.30045417836,
+   "COMMERCIAL & RESIDENTIAL": 27322.362499999912,
+   "COMMERCIAL": 312139.143005784,
+   "EDUCATIONAL INSTITUTION": 23337.720400000017,
+   "RESERVE SITE": 89274.35482124101,
+   "OPEN SPACE": 2143.587400000046,
+   "PARK": 7340.51284299997,
+   "UTILITY": 4996.9738571151365,
+   "CIVIC & COMMUNITY INSTITUTION": 16577.66592267435,
+   "HEALTH & MEDICAL CARE": 8058.712300000001,
+   "RESIDENTIAL WITH COMMERCIAL AT 1ST STOREY": 21405.354649999837
+  }
+ },
+ "H06": {
+  "op": "count",
+  "answer": 14
+ },
+ "H07": {
+  "op": "list",
+  "answer": [
+   600752,
+   616292,
+   622779,
+   626217,
+   626438,
+   643219,
+   646602,
+   647809,
+   649493,
+   653812,
+   668848,
+   670613,
+   671016,
+   680715,
+   694948
+  ]
+ },
+ "H08": {
+  "op": "list",
+  "answer": [
+   630258,
+   699895,
+   629511
+  ]
+ },
+ "H09": {
+  "op": "total_area",
+  "answer": 90524.93010000016
+ },
+ "H10": {
+  "op": "count",
+  "answer": 17
+ },
+ "H11": {
+  "op": "breakdown",
+  "answer": {
+   "ROAD": 1476095.26365,
+   "PARK": 275336.2186000006,
+   "COMMERCIAL": 761880.0376500009,
+   "HOTEL": 302640.91975,
+   "UTILITY": 26848.600099999916,
+   "OPEN SPACE": 217984.87470000007,
+   "CIVIC & COMMUNITY INSTITUTION": 155631.15834999934,
+   "WHITE": 580890.5293499988,
+   "COMMERCIAL & RESIDENTIAL": 39772.19079999987,
+   "RESIDENTIAL WITH COMMERCIAL AT 1ST STOREY": 67000.94589999976,
+   "WATERBODY": 616919.7517000011,
+   "EDUCATIONAL INSTITUTION": 23337.72040000003,
+   "RESERVE SITE": 474784.93360000016,
+   "SPORTS & RECREATION": 43181.20305000021,
+   "PLACE OF WORSHIP": 7137.662499999979,
+   "HEALTH & MEDICAL CARE": 8058.712300000001,
+   "RESIDENTIAL": 8216.132600000003
+  }
+ },
+ "H12": {
+  "op": "list",
+  "answer": [
+   593325,
+   595595,
+   659724,
+   683235
+  ]
+ },
+ "H13": {
+  "op": "total_area",
+  "answer": 16936.702217555183
+ },
+ "H14": {
+  "op": "count",
+  "answer": 0
+ },
+ "H15": {
+  "op": "list",
+  "answer": [
+   596161,
+   615049,
+   642573,
+   656772,
+   660010,
+   691372,
+   700004
+  ]
+ },
+ "H16": {
+  "op": "total_area",
+  "answer": 0
+ },
+ "H17": {
+  "op": "breakdown",
+  "answer": {
+   "ROAD": 351358.6988143359,
+   "COMMERCIAL": 163325.88969717064,
+   "WHITE": 293264.95758729597,
+   "WATERBODY": 5429.388459681939,
+   "OPEN SPACE": 22436.40558555255,
+   "CIVIC & COMMUNITY INSTITUTION": 21093.13716170995,
+   "PARK": 70676.08534895249,
+   "PLACE OF WORSHIP": 519.9505500000157,
+   "RESIDENTIAL WITH COMMERCIAL AT 1ST STOREY": 9967.470274786097,
+   "COMMERCIAL & RESIDENTIAL": 5988.5108000000355,
+   "RESERVE SITE": 138395.36500392194,
+   "HOTEL": 3603.732231070982
+  }
+ },
+ "H18": {
+  "op": "count",
+  "answer": 14
+ },
+ "H19": {
+  "op": "list",
+  "answer": [
+   677675,
+   700889,
+   687823,
+   596119,
+   600806,
+   630419,
+   634703,
+   648071,
+   617148,
+   631404
+  ]
+ },
+ "H20": {
+  "op": "total_area",
+  "answer": 545439.8470499989
+ },
+ "H21": {
+  "refuse": true
+ },
+ "H22": {
+  "refuse": true
+ },
+ "H23": {
+  "refuse": true
+ },
+ "H24": {
+  "refuse": true
+ },
+ "H25": {
+  "refuse": true
+ },
+ "H26": {
+  "refuse": true
+ }
+}
