@@ -1,0 +1,30 @@
+Question: which residential parcels in Bishan have GPR above 3?
+Read by: rule-based parser (deterministic)
+
+Query (allow-listed, read-only):
+{
+  "op": "list",
+  "planning_area": "BISHAN",
+  "land_use": [
+    "RESIDENTIAL"
+  ],
+  "gpr": {
+    "cmp": ">",
+    "value": 3.0
+  }
+}
+
+Equivalent SQL:
+SELECT objectid, lu_desc, gpr, ST_Area(geom) AS area_m2
+FROM mp2025_landuse  -- EPSG:3414, metres
+WHERE planning_area = 'BISHAN'
+  AND lu_desc IN ('RESIDENTIAL')
+  AND gpr_numeric > 3  -- non-numeric GPR (LND/EVA/SDP) excluded
+ORDER BY objectid
+
+Answer: 12 parcels listed
+Units: area in square metres (m2) and hectares (ha), computed in SVY21 (EPSG:3414).
+GPR = gross plot ratio as zoned; LND/EVA/SDP/NA codes are not numeric.
+Near-station queries: a parcel counts if it touches the buffer; its area is only the part inside the buffer.
+Data: URA Master Plan 2025 Land Use Layer (gazetted 1 Dec 2025), data.gov.sg d_a8c3546b26712e35021f3a681d0353ae. Coverage: BISHAN, DOWNTOWN CORE only.
+Parcels are assigned to a planning area/subzone by their representative point.

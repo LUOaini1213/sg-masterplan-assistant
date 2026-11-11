@@ -1,0 +1,211 @@
+{
+ "n_mutants": 29,
+ "n_killed": 28,
+ "n_survived": 1,
+ "n_invalid": 0,
+ "mutants": [
+  {
+   "id": "M01",
+   "status": "killed",
+   "detail": "1 failed, 30 passed in 2.23s",
+   "file": "src/sgmp/engine.py",
+   "description": "GPR > becomes >="
+  },
+  {
+   "id": "M02",
+   "status": "killed",
+   "detail": "1 failed, 31 passed in 2.31s",
+   "file": "src/sgmp/engine.py",
+   "description": "GPR < becomes <="
+  },
+  {
+   "id": "M03",
+   "status": "survived",
+   "detail": "78 passed in 3.48s",
+   "file": "src/sgmp/engine.py",
+   "description": "non-numeric GPR not excluded (equivalent mutant)"
+  },
+  {
+   "id": "M04",
+   "status": "killed",
+   "detail": "1 failed, 30 passed in 2.24s",
+   "file": "src/sgmp/engine.py",
+   "description": "near-station area not clipped to buffer"
+  },
+  {
+   "id": "M05",
+   "status": "killed",
+   "detail": "1 failed, 30 passed in 2.32s",
+   "file": "src/sgmp/engine.py",
+   "description": "touching parcels dropped"
+  },
+  {
+   "id": "M06",
+   "status": "killed",
+   "detail": "1 failed, 30 passed in 2.18s",
+   "file": "src/sgmp/engine.py",
+   "description": "subzone filter ignored"
+  },
+  {
+   "id": "M07",
+   "status": "killed",
+   "detail": "1 failed, 30 passed in 2.66s",
+   "file": "src/sgmp/engine.py",
+   "description": "largest-first sort reversed"
+  },
+  {
+   "id": "M08",
+   "status": "killed",
+   "detail": "1 failed, 34 passed in 3.47s",
+   "file": "src/sgmp/engine.py",
+   "description": "coverage warning suppressed"
+  },
+  {
+   "id": "M09",
+   "status": "killed",
+   "detail": "1 failed, 30 passed in 2.58s",
+   "file": "src/sgmp/engine.py",
+   "description": "total area uses mean"
+  },
+  {
+   "id": "M10",
+   "status": "killed",
+   "detail": "1 failed, 17 passed in 2.67s",
+   "file": "src/sgmp/dsl.py",
+   "description": "radius upper bound dropped"
+  },
+  {
+   "id": "M11",
+   "status": "killed",
+   "detail": "1 failed, 7 passed in 2.44s",
+   "file": "src/sgmp/dsl.py",
+   "description": "unknown keys accepted"
+  },
+  {
+   "id": "M12",
+   "status": "killed",
+   "detail": "1 failed, 10 passed in 2.11s",
+   "file": "src/sgmp/dsl.py",
+   "description": "unknown land-use codes accepted"
+  },
+  {
+   "id": "M13",
+   "status": "killed",
+   "detail": "1 failed, 20 passed in 2.36s",
+   "file": "src/sgmp/dsl.py",
+   "description": "spatial scope not required"
+  },
+  {
+   "id": "M14",
+   "status": "killed",
+   "detail": "1 failed, 26 passed in 2.74s",
+   "file": "src/sgmp/dsl.py",
+   "description": "default walking radius changed"
+  },
+  {
+   "id": "M15",
+   "status": "killed",
+   "detail": "1 failed, 39 passed in 3.82s",
+   "file": "src/sgmp/parser_rules.py",
+   "description": "'at least' parsed as '='"
+  },
+  {
+   "id": "M16",
+   "status": "killed",
+   "detail": "1 failed, 39 passed in 3.27s",
+   "file": "src/sgmp/parser_rules.py",
+   "description": "'above' parsed as >="
+  },
+  {
+   "id": "M17",
+   "status": "killed",
+   "detail": "1 failed, 39 passed in 2.95s",
+   "file": "src/sgmp/parser_rules.py",
+   "description": "km not converted to metres"
+  },
+  {
+   "id": "M18",
+   "status": "killed",
+   "detail": "1 failed, 39 passed in 3.14s",
+   "file": "src/sgmp/parser_rules.py",
+   "description": "SQL verbs not refused"
+  },
+  {
+   "id": "M19",
+   "status": "killed",
+   "detail": "1 failed, 39 passed in 3.01s",
+   "file": "src/sgmp/parser_rules.py",
+   "description": "price questions not refused"
+  },
+  {
+   "id": "M20",
+   "status": "killed",
+   "detail": "1 failed, 40 passed in 2.90s",
+   "file": "src/sgmp/parser_rules.py",
+   "description": "subzone named like its planning area misread"
+  },
+  {
+   "id": "M21",
+   "status": "killed",
+   "detail": "1 failed, 42 passed in 2.93s",
+   "file": "src/sgmp/vocab.py",
+   "description": "'business' drops business park"
+  },
+  {
+   "id": "M22",
+   "status": "killed",
+   "detail": "1 failed, 40 passed in 2.65s",
+   "file": "src/sgmp/vocab.py",
+   "description": "'green' drops open space"
+  },
+  {
+   "id": "M23",
+   "status": "killed",
+   "detail": "1 failed, 74 passed in 3.12s",
+   "file": "src/sgmp/scoring.py",
+   "description": "area tolerance too loose"
+  },
+  {
+   "id": "M24",
+   "status": "killed",
+   "detail": "1 failed, 75 passed in 3.14s",
+   "file": "src/sgmp/scoring.py",
+   "description": "list order ignored"
+  },
+  {
+   "id": "M25",
+   "status": "killed",
+   "detail": "1 failed, 68 passed in 3.12s",
+   "file": "src/sgmp/render.py",
+   "description": "query not shown to planner"
+  },
+  {
+   "id": "M26",
+   "status": "killed",
+   "detail": "1 failed, 68 passed in 3.16s",
+   "file": "src/sgmp/render.py",
+   "description": "data vintage hidden"
+  },
+  {
+   "id": "M27",
+   "status": "killed",
+   "detail": "1 failed, 72 passed in 3.12s",
+   "file": "src/sgmp/parser_llm.py",
+   "description": "LLM output bypasses validator"
+  },
+  {
+   "id": "M28",
+   "status": "killed",
+   "detail": "1 failed, 30 passed in 1.94s",
+   "file": "src/sgmp/data.py",
+   "description": "envelope-control parcels given GPR 0"
+  },
+  {
+   "id": "M29",
+   "status": "killed",
+   "detail": "1 failed, 64 passed in 2.63s",
+   "file": "scripts/build_readme.py",
+   "description": "percent not scaled"
+  }
+ ]
+}

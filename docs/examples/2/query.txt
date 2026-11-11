@@ -1,0 +1,29 @@
+Question: how much land near Bishan MRT is zoned business?
+Read by: rule-based parser (deterministic)
+
+Query (allow-listed, read-only):
+{
+  "op": "total_area",
+  "land_use": [
+    "BUSINESS 1",
+    "BUSINESS 2",
+    "BUSINESS PARK"
+  ],
+  "near": {
+    "station": "BISHAN",
+    "radius_m": 400.0
+  }
+}
+
+Equivalent SQL:
+SELECT SUM(ST_Area(ST_Intersection(geom, buffer))) AS area_m2
+FROM mp2025_landuse  -- EPSG:3414, metres
+WHERE lu_desc IN ('BUSINESS 1', 'BUSINESS 2', 'BUSINESS PARK')
+  AND ST_Intersects(geom, buffer)  -- buffer = 400 m around BISHAN MRT (centroid of its exits)
+
+Answer: 0 m2 (0.00 ha) across 0 parcels
+Units: area in square metres (m2) and hectares (ha), computed in SVY21 (EPSG:3414).
+GPR = gross plot ratio as zoned; LND/EVA/SDP/NA codes are not numeric.
+Near-station queries: a parcel counts if it touches the buffer; its area is only the part inside the buffer.
+Data: URA Master Plan 2025 Land Use Layer (gazetted 1 Dec 2025), data.gov.sg d_a8c3546b26712e35021f3a681d0353ae. Coverage: BISHAN, DOWNTOWN CORE only.
+Parcels are assigned to a planning area/subzone by their representative point.

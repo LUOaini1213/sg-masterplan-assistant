@@ -1,0 +1,65 @@
+[
+ {
+  "question": "which residential parcels in Bishan have GPR above 3?",
+  "query": {
+   "op": "list",
+   "planning_area": "BISHAN",
+   "land_use": [
+    "RESIDENTIAL"
+   ],
+   "gpr": {
+    "cmp": ">",
+    "value": 3.0
+   }
+  },
+  "answer": "12 parcels listed",
+  "n_parcels": 12,
+  "total_area_m2": 225563.6
+ },
+ {
+  "question": "how much land near Bishan MRT is zoned business?",
+  "query": {
+   "op": "total_area",
+   "land_use": [
+    "BUSINESS 1",
+    "BUSINESS 2",
+    "BUSINESS PARK"
+   ],
+   "near": {
+    "station": "BISHAN",
+    "radius_m": 400.0
+   }
+  },
+  "answer": "0 m2 (0.00 ha) across 0 parcels",
+  "n_parcels": 0,
+  "area_m2": 0.0
+ },
+ {
+  "question": "what is the land use mix near Bishan MRT?",
+  "query": {
+   "op": "breakdown",
+   "near": {
+    "station": "BISHAN",
+    "radius_m": 400.0
+   }
+  },
+  "answer": "13 land-use codes, 50.18 ha in total",
+  "n_parcels": 302,
+  "top_land_use": "RESIDENTIAL",
+  "top_land_use_ha": 18.62,
+  "total_ha": 50.18
+ },
+ {
+  "question": "list white sites in Downtown Core",
+  "query": {
+   "op": "list",
+   "planning_area": "DOWNTOWN CORE",
+   "land_use": [
+    "WHITE"
+   ]
+  },
+  "answer": "66 parcels listed",
+  "n_parcels": 66,
+  "total_area_m2": 580890.5
+ }
+]
