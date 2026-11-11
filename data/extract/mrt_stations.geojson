@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"name": "mrt_stations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3414" } },
+"xy_coordinate_resolution": 0.01,
+"features": [
+{ "type": "Feature", "properties": { "STATION": "BAYFRONT" }, "geometry": { "type": "Point", "coordinates": [ 30880.9, 29392.46 ] } },
+{ "type": "Feature", "properties": { "STATION": "BISHAN" }, "geometry": { "type": "Point", "coordinates": [ 29710.9, 36997.13 ] } },
+{ "type": "Feature", "properties": { "STATION": "BRIGHT HILL" }, "geometry": { "type": "Point", "coordinates": [ 27949.96, 38357.59 ] } },
+{ "type": "Feature", "properties": { "STATION": "BUGIS" }, "geometry": { "type": "Point", "coordinates": [ 30586.77, 31363.46 ] } },
+{ "type": "Feature", "properties": { "STATION": "CITY HALL" }, "geometry": { "type": "Point", "coordinates": [ 30128.14, 30621.67 ] } },
+{ "type": "Feature", "properties": { "STATION": "DOWNTOWN" }, "geometry": { "type": "Point", "coordinates": [ 30164.9, 29112.02 ] } },
+{ "type": "Feature", "properties": { "STATION": "ESPLANADE" }, "geometry": { "type": "Point", "coordinates": [ 30488.68, 30620.39 ] } },
+{ "type": "Feature", "properties": { "STATION": "MARINA BAY" }, "geometry": { "type": "Point", "coordinates": [ 30427.52, 28658.44 ] } },
+{ "type": "Feature", "properties": { "STATION": "MARYMOUNT" }, "geometry": { "type": "Point", "coordinates": [ 28696.1, 36727.31 ] } },
+{ "type": "Feature", "properties": { "STATION": "NICOLL HIGHWAY" }, "geometry": { "type": "Point", "coordinates": [ 31395.52, 31363.56 ] } },
+{ "type": "Feature", "properties": { "STATION": "PRINCE EDWARD ROAD" }, "geometry": { "type": "Point", "coordinates": [ 29435.63, 28413.34 ] } },
+{ "type": "Feature", "properties": { "STATION": "PROMENADE" }, "geometry": { "type": "Point", "coordinates": [ 31008.25, 30623.84 ] } },
+{ "type": "Feature", "properties": { "STATION": "RAFFLES PLACE" }, "geometry": { "type": "Point", "coordinates": [ 30013.95, 29570.97 ] } },
+{ "type": "Feature", "properties": { "STATION": "SHENTON WAY" }, "geometry": { "type": "Point", "coordinates": [ 29960.66, 28881.73 ] } },
+{ "type": "Feature", "properties": { "STATION": "TANJONG PAGAR" }, "geometry": { "type": "Point", "coordinates": [ 29459.55, 28775.1 ] } },
+{ "type": "Feature", "properties": { "STATION": "UPPER THOMSON" }, "geometry": { "type": "Point", "coordinates": [ 27944.58, 37402.24 ] } }
+]
+}
